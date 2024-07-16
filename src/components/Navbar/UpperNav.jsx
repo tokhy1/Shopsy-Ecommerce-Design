@@ -1,7 +1,7 @@
 import Logo from "../../assets/logo.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
-import DarkMode from "./DarkMode";
+import DarkMode from "./DarkModeButton";
 
 const UpperNav = () => {
   return (
