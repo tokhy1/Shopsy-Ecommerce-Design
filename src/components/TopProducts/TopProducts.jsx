@@ -47,7 +47,7 @@ const TopProducts = () => {
         {/* Body section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
           {ProductsData.map((data) => {
-            return <TopProductCard key={data.id} />;
+            return <TopProductCard data={data} key={data.id} />;
           })}
         </div>
       </div>
