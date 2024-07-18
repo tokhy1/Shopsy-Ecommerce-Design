@@ -72,6 +72,13 @@ const Products = () => {
               return <ProductCard data={data} key={data.id} />;
             })}
           </div>
+
+          {/* View all button */}
+          <div className="flex justify-center">
+            <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md">
+              View All
+            </button>
+          </div>
         </div>
       </div>
     </div>
