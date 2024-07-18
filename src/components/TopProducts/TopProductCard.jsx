@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 const TopProductCard = ({ data }) => {
   return (
     <div
+      data-aos="zoom-in"
       className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl transition-all duration-300 group max-w-[300px]"
     >
       {/* Image section */}
