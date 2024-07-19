@@ -1,6 +1,10 @@
-## Shopsy E-commerce Website
+## Shopsy E-commerce
 
 **Shopsy** is a modern and responsive e-commerce website built with the latest web technologies. This project showcases a sleek design, smooth user interactions, and a seamless shopping experience.
+
+## Preview
+
+[Overview](https://github.com/user-attachments/assets/24b1cf33-6a7f-4634-a788-39071873da6e)
 
 ### Technologies Used:
 - **React:** A JavaScript library for building user interfaces.
