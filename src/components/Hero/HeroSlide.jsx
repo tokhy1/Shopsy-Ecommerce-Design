@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const HeroSlide = ({ data }) => {
+const HeroSlide = ({ data, handleOrderPopup }) => {
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2">
@@ -22,7 +22,10 @@ const HeroSlide = ({ data }) => {
             {data.description}
           </p>
           <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
-            <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
+            <button
+              onClick={handleOrderPopup}
+              className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
+            >
               Order Now
             </button>
           </div>

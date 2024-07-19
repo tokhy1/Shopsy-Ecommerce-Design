@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Image1 from "../../assets/hero/women.png";
 import Image2 from "../../assets/hero/shopping.png";
 import Image3 from "../../assets/hero/sale.png";
@@ -28,7 +29,7 @@ const ImageList = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
   let settings = {
     dots: false,
     arrows: false,
@@ -50,7 +51,13 @@ const Hero = () => {
       <div className="container pb-8 sm:pb-0">
         <Slider {...settings}>
           {ImageList.map((data) => {
-            return <HeroSlide data={data} key={data.id} />;
+            return (
+              <HeroSlide
+                data={data}
+                key={data.id}
+                handleOrderPopup={handleOrderPopup}
+              />
+            );
           })}
         </Slider>
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Img1 from "../../assets/shirt/shirt.png";
 import Img2 from "../../assets/shirt/shirt2.png";
 import Img3 from "../../assets/shirt/shirt3.png";
@@ -27,7 +28,7 @@ const ProductsData = [
   },
 ];
 
-const TopProducts = () => {
+const TopProducts = ({ handleOrderPopup }) => {
   return (
     <div>
       <div className="container mb-5">
@@ -47,7 +48,13 @@ const TopProducts = () => {
         {/* Body section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center">
           {ProductsData.map((data) => {
-            return <TopProductCard data={data} key={data.id} />;
+            return (
+              <TopProductCard
+                data={data}
+                key={data.id}
+                handleOrderPopup={handleOrderPopup}
+              />
+            );
           })}
         </div>
       </div>

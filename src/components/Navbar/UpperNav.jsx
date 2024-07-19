@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import Logo from "../../assets/logo.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from "./DarkModeButton";
 
-const UpperNav = () => {
+const UpperNav = ({ handleOrderPopup }) => {
   return (
     <div className="bg-primary/40 py-2">
       <div className="container flex justify-between items-center">
@@ -31,7 +32,7 @@ const UpperNav = () => {
 
           {/* Order button */}
           <button
-            onClick={() => alert("This feature not available yet!")}
+            onClick={handleOrderPopup}
             className="group bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3"
           >
             <span className="group-hover:block hidden transition-all duration-200 font-medium">
