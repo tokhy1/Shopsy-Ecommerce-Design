@@ -28,7 +28,7 @@ To get a copy of the project up and running on your local machine for developmen
 
 1. Clone the repository: `git clone https://github.com/tokhy1/Shopsy-Ecommerce-Design.git`
 2. Install dependencies: `npm install`
-3. Compile sass code: `npm run tw:watch`
+3. Start the localhost: `npm run dev`
 
 
 ## Contributing:
